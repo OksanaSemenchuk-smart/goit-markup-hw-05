@@ -547,8 +547,9 @@ header {
 
 .subscribe-box {
   width: 453px;
-  margin-right: auto;
+  margin-left: auto;
 }
+
 .subscribe-form {
   display: flex;
   flex-direction: row;
@@ -579,7 +580,7 @@ header {
 
 .subscribe-put:hover,
 .subscribe-put:focus {
-  border-color: #4d5ae5;
+  border-color: #31d0aa;
 }
 
 .subscribe-put::placeholder {
@@ -588,13 +589,13 @@ header {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  olor: #fff;
+  color: #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-put:hover::placeholder,
 .subscribe-put:focus::placeholder {
-  color: #4d5ae5;
+  color: #31d0aa;
 }
 
 .subscribe-btn {
@@ -604,6 +605,7 @@ header {
   flex-direction: row;
   gap: 16px;
   border-radius: 4px;
+  border: none;
   padding: 8px 24px;
   width: 165px;
   height: 40px;
@@ -625,12 +627,12 @@ header {
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .subscribe-put:hover,
 .subscribe-put:focus {
-  border: 1px solid #4d5ae5;
+  border: 1px solid #31d0aa;
   border-radius: 4px;
   width: 360px;
   height: 40px;
@@ -662,6 +664,8 @@ header {
 }
 
 /* #endregion backdrop */
+
+/* #region modal */
 
 .modal {
   border-radius: 4px;
@@ -871,3 +875,5 @@ header {
 .modal-btn:focus {
   background-color: #404bbf;
 }
+
+/* #endregion modal */
