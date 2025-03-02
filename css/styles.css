@@ -571,21 +571,25 @@ header {
   border-radius: 4px;
   width: 264px;
   height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding-left: 16px;
-  background: #2e2f42;
+  background-color: transparent;
   color: #fff;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
 }
 
 .subscribe-put:hover,
 .subscribe-put:focus {
   border-color: #31d0aa;
+  outline: none;
 }
 
 .subscribe-put::placeholder {
-  background-color: #2e2f42;
-  font-weight: 400;
+  background-color: transparent;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -603,18 +607,19 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+  cursor: pointer;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -622,6 +627,7 @@ header {
 
 .subscribe-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .subscribe-btn:hover,
@@ -694,20 +700,23 @@ header {
   line-height: 0;
   width: 24px;
   height: 24px;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   cursor: pointer;
   position: absolute;
   top: 24px;
   right: 24px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .close-btn-icon {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
@@ -754,7 +763,9 @@ header {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:hover,
@@ -782,6 +793,10 @@ header {
 }
 
 .modal-form-comment {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -791,7 +806,9 @@ header {
   padding-right: 16px;
   padding-left: 16px;
   padding-bottom: 8px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-comment::placeholder {
@@ -822,6 +839,7 @@ header {
   color: #8e8f99;
   cursor: pointer;
 }
+
 .modal-checkbox-icon {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -833,17 +851,15 @@ header {
   background-color: transparent;
   margin-right: 8px;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox-input:checked
-  + .modal-checkbox-label
-  .modal-checkbox-custom-icon {
-  fill: #f4f4fd;
-  border-radius: 2px;
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-icon {
   background-color: #404bbf;
-  border: 1px solid #404bbf;
-  width: 16px;
-  height: 16px;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .modal-checkbox-link {
@@ -858,7 +874,7 @@ header {
   border-radius: 4px;
   border: none;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
@@ -868,6 +884,7 @@ header {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
